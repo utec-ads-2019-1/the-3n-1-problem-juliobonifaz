@@ -2,6 +2,8 @@
 
 using namespace std;
 
+// mi laptop no quiere correr mi codigo
+
 int main() {
 
     int count = 0;
