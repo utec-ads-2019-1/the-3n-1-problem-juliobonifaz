@@ -25,10 +25,11 @@ int main() {
 
     cout  << int2 << " " << int3 << " ";
 
-    if ( int2 > int3)
+    if ( int2 > int3){
         temp = int2;
         int2 = int3;
         int3 = temp;
+    }
 
 
     for (int i = int2; i <= int3 ; ++i) {
