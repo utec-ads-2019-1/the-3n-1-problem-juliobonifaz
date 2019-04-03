@@ -2,15 +2,14 @@
 
 using namespace std;
 
-// mi laptop no quiere correr mi codigo
-
 int main() {
 
-    int count = 0;
+    int count = 1;
 
     int MAXcount = 0;
 
     int cambio = 0;
+    int temp2 = 0;
     int temp = 0;
 
 
@@ -28,18 +27,21 @@ int main() {
     cout  << int2 << " " << int3 << " ";
 
     if ( int2 > int3){
-        temp = int2;
+        temp2 = int2;
         int2 = int3;
-        int3 = temp;
+        int3 = temp2;
     }
+
+
+
 
 
     for (int i = int2; i <= int3 ; ++i) {
         temp = i ;
         while (temp != 1){
-            if (temp % 2 ==0){
+            if (temp % 2 ==1){
 
-                temp = temp + temp +temp +1;
+                temp = (temp*3) +1;
             }
             else{
                 temp= temp/2;
@@ -49,14 +51,10 @@ int main() {
         if (count > MAXcount) {
             MAXcount = count;
         }
+        count = 0;
+        temp = 0;
     }
     cout << MAXcount;
-
-
-
-
-
-
 
     return 0;
 }
